@@ -2,7 +2,7 @@ class Api::ParamsController < ApplicationController
 
   def query 
 
-    @name = params["name"]
+    @name = params["name"].upcase
 
 
     if @name[0].upcase == "A"
