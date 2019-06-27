@@ -1,1 +1,5 @@
+# if @name[0] == "a" or @name[0] == "A"
+#   p 'Hey, your name starts with the first letter of the alphabet!'
+# else 
 {message: @name}
+# end 

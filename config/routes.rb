@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
 
   get '/query_url' => 'params#query'
+  get '/guess_game' => 'params#guess'
   end
 end
