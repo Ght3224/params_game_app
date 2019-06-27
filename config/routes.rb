@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
   get '/query_url' => 'params#query'
   get '/guess_game' => 'params#guess'
+
+  get '/segment_paramter_url/:this' => "params#url_segment_method"
+
   end
 end

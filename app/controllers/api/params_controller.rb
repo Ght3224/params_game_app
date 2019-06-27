@@ -26,7 +26,7 @@ class Api::ParamsController < ApplicationController
    @output = ""
 
     if @guess.to_i == number 
-        @output = "You got it"
+      @output = "You got it"
         elsif @guess.to_i > number 
           @output = "Too big"
           elsif @guess.to_i < number 
@@ -36,6 +36,13 @@ class Api::ParamsController < ApplicationController
     render 'guess_game.json.jb'
 
 
+  end 
+
+
+
+  def url_segment_method
+
+    render 'url.json.jb'
   end 
 
 end
