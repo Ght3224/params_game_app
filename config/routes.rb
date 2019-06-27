@@ -9,7 +9,15 @@ Rails.application.routes.draw do
   get '/query_url' => 'params#query'
   get '/guess_game' => 'params#guess'
 
-  get '/segment_paramter_url/:this' => "params#url_segment_method"
+  get '/segment_paramter_url/:guess' => "params#guess"
+
+
+
+  post '/body_parameter_url' => 'params#body_param_action'
+
+
+#game
+  post '/guess' => 'params#action'
 
   end
 end
