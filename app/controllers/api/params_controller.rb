@@ -41,6 +41,16 @@ class Api::ParamsController < ApplicationController
 
 
   def url_segment_method
+    @guess = params["this"]
+    number = rand(2)
+
+    if @guess.to_i == number 
+      @output = "You got it"
+        elsif @guess.to_i > number 
+          @output = "Too big"
+          elsif @guess.to_i < number
+            @output = "Too small"
+    end 
 
     render 'url.json.jb'
   end 
